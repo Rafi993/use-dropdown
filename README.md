@@ -1,4 +1,4 @@
-# use-dropdown
+# react-use-dropdown
 
 Simple hook that you can use to build dropdowns
 
@@ -11,9 +11,13 @@ easier to build custom dropdowns.
 
 ## Usage
 
+```
+$ npm i react-use-dropdown
+```
+
 ```javascript
 import { useRef } from "react";
-import useDropdown from "use-dropdown";
+import useDropdown from "react-use-dropdown";
 
 const outerRef = useRef(null);
 const { dropdown, toggleDropdown } = useDropdown(outerRef);
