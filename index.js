@@ -29,7 +29,7 @@ const useDropdown = (parentRef: any) => {
     document.addEventListener("click", clickOutside, false);
     return () => {
       document.removeEventListener("keydown", closeModal, false);
-      document.addEventListener("click", clickOutside, false);
+      document.removeEventListener("click", clickOutside, false);
     };
   }, []);
 
